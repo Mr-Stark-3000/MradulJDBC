@@ -1,5 +1,7 @@
 package com.jdbc.dao;
 
+import java.util.List;
+
 import com.jdbc.entity.Employee;
 
 public interface EmployeeDao {
@@ -13,5 +15,6 @@ public interface EmployeeDao {
 	public void getEmpById(int id);
 
 	public void getAllEmps();
+	public List<Employee> getAllEmpRecords();
 
 }

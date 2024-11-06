@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 import java.util.Properties;
 
 import com.jdbc.entity.Employee;
@@ -85,6 +86,15 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public List<Employee> getAllEmpRecords() {
+		
+		
+		
+		
+		return null;
 	}
 
 }
