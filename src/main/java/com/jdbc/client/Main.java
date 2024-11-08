@@ -1,5 +1,7 @@
 package com.jdbc.client;
 
+import java.util.List;
+
 import com.jdbc.dao.EmployeeDao;
 import com.jdbc.dao.EmployeeDaoImpl;
 import com.jdbc.entity.Employee;
@@ -18,13 +20,20 @@ public class Main {
 //		emp = new Employee("Dhairya singh", "male", 12, 45787);
 //		dao.insertEmp(emp);
 //
-//		emp = new Employee("Vishwas singh", "male", 13, 45787);
-//		dao.insertEmp(emp);
+		emp = new Employee("Bharosha singh", "male", 14, 45787);
+		dao.insertEmpByPs(emp);
 
 //		dao.updateEmp(emp);
 //		dao.deleteEmp(12);
-		
 		dao.getAllEmps();
+//		List<Employee> allEmpRecords = dao.getAllEmpRecords();
+//		
+//		for(Employee em : allEmpRecords)
+//		{
+//			System.out.println("EMP:  "+em);
+//		}
+		
+//		dao.getEmpByName("wwwww' or 1=1");
 	}
 
 }
